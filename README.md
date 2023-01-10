@@ -1,6 +1,10 @@
 # MorePractice
 # Gift List Command Line Program
 
+## Current Development Stage
+
+Although the project works functionally I am still in the process of implementing the pygments library to make the .py file output to be more stylized.
+
 ## Objective
 
 Get experience building Python applications and creating a GUI as well as implementing Python Libraries such as
