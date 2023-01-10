@@ -11,12 +11,15 @@ from pygments.lexers import PythonLexer
 
 formatter = HtmlFormatter(cssclass='highlight')
 
+
+# Currently working on implementing pygments correctly...
+
 class ScriptViewer(QWidget):
     def __init__(self):
         super().__init__()
         self.init_ui()
 
-    # Function for initializing GUI
+    # Function for initializing GUI and setting up application layout.
     def init_ui(self):
         self.combo = QComboBox()
         self.combo.addItems(['select', 'cs412_hw6_a.py', 'cs412_lab7_b.py', 'cs412_lab9_a.py'])
@@ -31,6 +34,7 @@ class ScriptViewer(QWidget):
         layout.addWidget(self.text)
         self.setLayout(layout)
 
+    # Display correct file matching the filename in the combo box to the correct path.
     def display_script(self, index):
         # formatter = HtmlFormatter(cssclass='highlight')
         script_name = self.combo.itemText(index)
