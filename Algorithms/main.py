@@ -1,7 +1,7 @@
 # main.py
 
 import os
-
+# Import PyQt5 for GUI
 from PyQt5.QtWidgets import (QApplication, QComboBox, QTextEdit, QVBoxLayout,
                              QWidget)
 from PyQt5.QtGui import QFont
@@ -16,6 +16,7 @@ class ScriptViewer(QWidget):
         super().__init__()
         self.init_ui()
 
+    # Function for initializing GUI
     def init_ui(self):
         self.combo = QComboBox()
         self.combo.addItems(['select', 'cs412_lab0_a.py', 'cs412_lab4_a.py', 'cs412_lab9_a.py'])
@@ -50,24 +51,6 @@ class ScriptViewer(QWidget):
 
         # Use a PyQt stylesheet to apply the styles to the text edit widget
         self.text.setStyleSheet(formatter.get_style_defs('.highlight'))
-
-
-
-
-
-        # print(f'Opening file {script_path}')
-        # try:
-        #     with open(script_path, 'r') as f:
-        #         script_contents = f.read()
-        #         # highlighted_code = highlight(script_contents, PythonLexer(), HtmlFormatter())
-        #         # self.text.setHtml(highlighted_code)
-        # except Exception as e:
-        #     print(f'Error opening file: {e}')
-        #     return
-        # # self.text.setPlainText(script_contents)
-        # highlighted_code = highlight(script_contents, PythonLexer(), HtmlFormatter())
-        # self.text.setHtml(highlighted_code)
-
 
 
 app = QApplication([])
