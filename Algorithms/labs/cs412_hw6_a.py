@@ -3,6 +3,12 @@
 
 """
 
+# Greedy algorithm implementation
+# Given an integer array of seeds where the int value of
+# each element is the number of days it takes
+# for that plant to fully grow. You can only plant one seed type per day.
+# Determine the order in which the seeds should be planted for all
+# plants to be fully grown in the shortest amount of time.
 
 def plant_seeds(seeds):
 	day = 1  # keep track of what day we're one.
