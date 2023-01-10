@@ -19,7 +19,7 @@ class ScriptViewer(QWidget):
     # Function for initializing GUI
     def init_ui(self):
         self.combo = QComboBox()
-        self.combo.addItems(['select', 'cs412_hw6_a.py', 'cs412_lab7_a.py', 'cs412_lab9_a.py'])
+        self.combo.addItems(['select', 'cs412_hw6_a.py', 'cs412_lab7_b.py', 'cs412_lab9_a.py'])
         self.combo.currentIndexChanged.connect(self.display_script)
 
         self.text = QTextEdit()
